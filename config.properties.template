@@ -1,0 +1,9 @@
+[influxdb]
+host =
+port =
+user =
+password =
+database =
+
+[sensors]
+<sensor id> = <sensor name>
