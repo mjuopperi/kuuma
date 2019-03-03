@@ -1,0 +1,14 @@
+[Unit]
+Description=Temperature measuring service
+After=network.target
+
+[Service]
+Type=simple
+User=monitor
+WorkingDirectory=/home/monitor/kuuma
+ExecStart=/usr/bin/python /home/monitor/kuuma/main.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
